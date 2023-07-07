@@ -150,7 +150,8 @@ export default class DataFeed
       const urlParameters = {
         instId: parsedSymbol.instId,
         bar: OKX_RESOLUSION[resolution as keyof typeof OKX_RESOLUSION],
-        before: to,
+        // before: from * 1000,
+        after: to * 1000,
         limit: 300,
       };
       const query = Object.keys(urlParameters)
@@ -178,10 +179,7 @@ export default class DataFeed
           volume: any;
         }[] = [];
         data.data.reverse().forEach((bar: string[]) => {
-          if (
-            parseInt(bar[0]) >= from * 1000 &&
-            parseInt(bar[0]) <= to * 1000
-          ) {
+          if (parseInt(bar[0]) >= from * 1000 && parseInt(bar[0]) < to * 1000) {
             bars = [
               ...bars,
               {
