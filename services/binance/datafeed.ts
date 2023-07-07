@@ -149,7 +149,7 @@ export default class DataFeed
         symbol: parsedSymbol.symbol,
         interval:
           BINANCE_RESOLUSION[resolution as keyof typeof BINANCE_RESOLUSION],
-        startTime: from * 1000,
+        // startTime: from * 1000,
         endTime: to * 1000,
         limit: 1000,
       };
