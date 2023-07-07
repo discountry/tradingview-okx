@@ -38,6 +38,7 @@ export const TVChartContainer = (
       enabled_features: ["study_templates"],
       charts_storage_url: props.charts_storage_url,
       charts_storage_api_version: props.charts_storage_api_version,
+      save_load_adapter: props.save_load_adapter,
       client_id: props.client_id,
       user_id: props.user_id,
       fullscreen: props.fullscreen,
@@ -81,6 +82,12 @@ export const TVChartContainer = (
         //       { shape: "horizontal_line" }
         //     );
         // });
+
+        tvWidget.subscribe("onAutoSaveNeeded", () =>
+          tvWidget.saveChartToServer(undefined, undefined, {
+            chartName: "tv-chart-default",
+          })
+        );
       });
     });
 
