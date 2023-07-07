@@ -1,14 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tradingview OKX example
+
+This is an example of how to use the [Tradingview Charting Library](https://github.com/tradingview/charting-library-examples/) with [Next.js](https://nextjs.org/) and [OKX API](https://www.okx.com/docs-v5/).
+
+## Dependencies
+
+- [Tradingview Charting Library](https://github.com/tradingview/charting-library-examples/)
+- [Next.js v13](https://nextjs.org/)
+- [OKX API](https://www.okx.com/docs-v5/)
+
+## Project Structure
+
+```bash
+
+├── components
+│   ├── TradingviewChart
+│   │   ├── TradingviewChart.tsx
+│   │   ├── TradingviewChart.module.css
+│   │   └── index.ts
+│   └── index.ts
+├── pages
+│   ├── api
+│   │   └── okx-api.ts
+│   ├── _app.tsx
+│   ├── _document.tsx
+│   ├── index.module.css
+│   └── index.tsx
+├── services
+│   ├── okx
+│   │   ├── datafeed.ts
+│   │   └── streaming.ts
+│   └── index.ts
+├── styles
+│   ├── global.css
+│   └── index.ts
+
+```
 
 ## Getting Started
+
+This project is bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
 
 ```bash
+npm install
 npm run dev
 # or
+yarn
 yarn dev
 # or
+pnpm install
 pnpm dev
 ```
 
