@@ -11,6 +11,7 @@ import {
 const defaultWidgetProps: Partial<ChartingLibraryWidgetOptions> = {
   symbol: "OKX:BTC/USDT",
   theme: "dark",
+  timezone: "Asia/Hong_Kong",
   interval: "1D" as ResolutionString,
   library_path: "/static/charting_library/",
   locale: "en",

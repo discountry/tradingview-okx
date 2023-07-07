@@ -28,6 +28,7 @@ export const TVChartContainer = (
       //   }
       // ),
       datafeed: new DataFeed({}),
+      timezone: props.timezone,
       interval: props.interval as ResolutionString,
       container: chartContainerRef.current,
       library_path: props.library_path,

@@ -150,7 +150,7 @@ export default class DataFeed
       const urlParameters = {
         instId: parsedSymbol.instId,
         bar: OKX_RESOLUSION[resolution as keyof typeof OKX_RESOLUSION],
-        // before: from * 1000,
+        before: from * 1000,
         after: to * 1000,
         limit: 300,
       };
