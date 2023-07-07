@@ -4,7 +4,7 @@ import {
   ResolutionString,
   widget,
 } from "@/public/static/charting_library";
-import DataFeed from "@/services/okx/datafeed";
+import DataFeed from "@/services/binance/datafeed";
 import { useEffect, useRef } from "react";
 import styles from "./index.module.css";
 

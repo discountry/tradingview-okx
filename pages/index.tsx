@@ -9,7 +9,7 @@ import {
 } from "@/public/static/charting_library/charting_library";
 
 const defaultWidgetProps: Partial<ChartingLibraryWidgetOptions> = {
-  symbol: "OKX:BTC/USDT",
+  symbol: "Binance:BTC/USDT",
   theme: "dark",
   timezone: "Asia/Hong_Kong",
   interval: "1D" as ResolutionString,
