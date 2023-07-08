@@ -13,7 +13,7 @@ This is an example of how to use the [Tradingview Charting Library](https://gith
 ```bash
 
 ├── components
-│   ├── TVChartCointainer
+│   ├── TVChartContainer
 │   │   ├── index.tsx
 │   │   └── index.module.css
 ├── pages
