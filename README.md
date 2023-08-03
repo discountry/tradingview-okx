@@ -2,6 +2,12 @@
 
 This is an example of how to use the [Tradingview Charting Library](https://github.com/tradingview/charting-library-examples/) with [Next.js](https://nextjs.org/) and [OKX API](https://www.okx.com/docs-v5/).
 
+## Live Preview
+
+Show case example:
+
+* [RitMEX Trade](https://trade.ritmex.one/)
+
 ## Dependencies
 
 - [Tradingview Charting Library](https://github.com/tradingview/charting-library-examples/)
